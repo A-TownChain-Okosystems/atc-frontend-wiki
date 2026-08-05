@@ -1,14 +1,18 @@
 # atc-frontend-wiki
 
-📖 ATC Frontend Wiki — Web-Frontend, Bootscreen, Battle-UI
+Wiki für [atc-frontend](https://github.com/A-TownChain-Okosystems/atc-frontend)
 
-## Zugehöriges Repository
-- **Source:** [`A-TownChain-Okosystems/atc-frontend`](https://github.com/A-TownChain-Okosystems/atc-frontend)
+Dokumentation für Frontend (React)
 
-## Status
-- **Wiki-Status:** Initialisiert
-- **Sync:** Täglich synchronisiert via GitHub + Notion + Wiki Sync Automation
-- **Organisation:** A-TownChain-Okosystems
+## Dokumentation
+- [Architektur](ARCHITECTURE.md)
+- [API Reference](API.md)
+- [Module](MODULES.md)
+- [Status](STATUS.md)
 
----
-Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
+## Übersicht
+Dieses Wiki dokumentiert das `atc-frontend`-Repo, Teil des A-TownChain OS Ökosystems (70 Repos).
+
+Org: [A-TownChain-Okosystems](https://github.com/A-TownChain-Okosystems)
+
+[agent: aurora-base44-superagent-6a2756186106d6f0fbb105b5]
