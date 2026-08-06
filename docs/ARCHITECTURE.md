@@ -1,18 +1,35 @@
-# 🏗️ Architektur — atc-frontend
+# 🏛️ Architektur — atc-frontend
 
-Das Frontend-Repository `atc-frontend` bildet die Layer-10 Präsentationsschicht im KAI-OS Ökosystem.
+> **Repo:** [atc-frontend](https://github.com/A-TownChain-Okosystems/atc-frontend)
+> **Layer:** L10 | **Titel:** Frontend
+> **Stand:** 2026-08-06 | **Version:** v1.0.0
 
-## Schichtenmodell
+---
 
-1. **User Interface Layer**: Desktop Window Manager, Widget Grid, Neon Dashboard.
-2. **Application State Layer**: Event-Bus, Session Vault, Active App Manager.
-3. **Network & Transport Layer**: REST & WebSocket Protocol Client (`assets/js/api.js`).
+## Übersicht
 
-## Kommunikation
+Web-Frontend: Bootscreen, Dashboard, Wallet-UI, Battle-UI.
 
-```
-+-------------------+        WebSocket / REST       +-------------------+
-|   atc-frontend    | <--------------------------> |   atc-gateway     |
-|   (Browser / L10) |                              |   (Port 4000)     |
-+-------------------+                              +-------------------+
-```
+## Komponenten
+
+## Abhängigkeiten
+
+Dieses Repo ist Teil des A-TownChain Ökosystems und nutzt:
+- [ATCLang Compiler](https://github.com/A-TownChain-Okosystems/atclang) für .atc Module
+- [ATC Standards](https://github.com/A-TownChain-Okosystems/atc-standards) für Spezifikationen
+- [Haupt-Wiki](https://github.com/A-TownChain-Okosystems/a-townchain-os-docs) für Governance
+
+## Statistik
+
+| Metrik | Wert |
+|--------|------|
+| Code-Dateien | 0 |
+| .atc | 0 |
+| .py | 0 |
+| .rs | 0 |
+| .ts | 0 |
+| Total Zeilen | 0 |
+
+---
+
+*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
