@@ -1,36 +1,57 @@
-# 🌳 Architektur — atc-frontend-wiki
+# ARCHITECTURE.md — atc-frontend
+> Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
 
-> **Stand:** 2026-08-06 | **Commit:** c37eaa0
-> **Teil von:** [A-TownChain Ökosystem](https://github.com/A-TownChain-Okosystems)
-
-## Statistik
-
-| Metrik | Wert |
-|--------|------|
-| Dateien | 11 |
-| Zeilen | 179 |
-| .atc | 0 |
-| .py | 0 |
-| .rs | 0 |
-| .ts/.tsx | 0 |
-| .md | 9 |
-
-## Verzeichnisstruktur
-
-```
-├── docs/ (5 files, 94 lines)
-│   ├── API.md (14 lines)
-│   ├── ARCHITECTURE.md (35 lines)
-│   ├── COMPONENTS.md (8 lines)
-│   ├── MODULES.md (14 lines)
-│   └── ROADMAP.md (23 lines)
+## File Tree
+```tree
 ├── .gitignore
-├── FILE_REGISTER.md (18 lines)
+├── CHANGELOG.md
+├── COMPONENT_PLAN.md
+├── FILE_REGISTER.md
 ├── LICENSE
-├── README.md (24 lines)
-├── ROADMAP.md (8 lines)
-└── STATUS.md (35 lines)
+├── README.md
+├── ROADMAP.md
+├── STATUS.md
+├── __mocks__/
+│   └── styleMock.js
+├── assets/
+│   ├── css/
+│   │   └── variables.css
+│   └── js/
+│       └── api.js
+├── battle/
+│   └── index.html
+├── bootscreen/
+│   └── README.md
+├── css/
+├── index.html
+├── jest.config.js
+├── jest.setup.js
+├── js/
+└── src/
+    ├── App.tsx
+    ├── components/
+    │   ├── BlockCard.tsx
+    │   ├── Footer.tsx
+    │   ├── Header.tsx
+    │   ├── StatCard.tsx
+    │   └── TxRow.tsx
+    └── views/
+        ├── Dashboard.tsx
+        ├── Explorer.tsx
+        ├── Governance.tsx
+        ├── Marketplace.tsx
+        └── Wallet.tsx
 ```
 
----
-*Auto-generiert 2026-08-06 · Aurora (MasterBrain · Base44)*
+## Module Descriptions
+- **index.html**: Root web entry point for the A-TownChain front-end web dashboard.
+- **css/** / **assets/css/**: CSS stylesheets, CSS custom properties, and UI layout theme variables.
+- **js/** / **assets/js/**: ES6 JavaScript client modules, API communication layer, and DOM handlers.
+- **assets/**: Media assets, icons, logos, and UI graphics.
+- **battle/** & **bootscreen/**: Frontend components for boot sequence animations and interactive battle simulation screens.
+
+## Build System
+Static HTML5 / ES6 JavaScript web application architecture. Servable via any static HTTP server or bundlable with Vite/Webpack. Jest and styleMock configured for unit testing.
+
+## Dependencies
+Native ES6+ JavaScript runtime, HTML5 DOM APIs, CSS3 Custom Properties, Fetch API / WebSocket API for blockchain RPC node connection.
